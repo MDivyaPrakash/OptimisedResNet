@@ -25,3 +25,5 @@ The BestArchitecture folder contains the model code used to setup and train the 
 - Confusion_Matrix folder for storing the necessary variable created during the straining and using it for plotting graphs
 - checkpoint folder stored the best model obtained during the traininf
 - plots contains the plot generated for the model specified
+
+![Alt text](./Experiments/ExperimentsImage1.jpeg?raw=true "Title")
