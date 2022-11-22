@@ -10,4 +10,11 @@ After trying out a various methodologies and combinations of optimizers, paramet
 - Architecture 3: With 512 channel block removed with only [3,3,3] block configuration for 64, 128, 256 channels respectively, plus dropout for Conv layers and hidden linear layer.
 
 # Respository details
-The BestArchitecture contains the model code used to setup and train the architecture along with the necessary plots. 
+The BestArchitecture folder contains the model code used to setup and train the architecture along with the necessary plots. Each Model folder contains the following details
+- Python Notebook having the results and plots for each model configuration
+- main.py file , which has to used to execute the model
+- resnetModel.py file, which defines the base architecture of the modified ResNet model
+- PlotConfusionMatrix.py file for the plotting the confusion matrix , Train vs Validation plots
+- Confusion_Matrix folder for storing the necessary variable created during the straining and using it for plotting graphs
+- checkpoint folder stored the best model obtained during the traininf
+- plots contains the plot generated for the model specified
