@@ -7,18 +7,14 @@ In the work shown in this report, we try to maximize the test accuracy of the Re
 After trying out a various methodologies and combinations of optimizers, parameters, layer structures, it was found that 3 of the model configurations exhibited high test accuracy.
 - Architecture 1: With Conv layers [2,1,1,1] block configuration for 64, 128, 256 & 512 channels respectively.
 - Architecture 2: With 512 channel block removed with only [3,3,3] block configuration for 64, 128, 256 channels respectively, plus dropout for Convultional layers and extra hidden linear layer of 128 neurons.
-Arch  Bi Dropout Acc(%)
-1 4 [2,1,1,1] - 94.17%
-2 3 [3,3,3] 0.2 (Conv layers +
-hidden layer) 94.17%
-Table 2: Architecture configurations of Best Models. N :
-Residual Layer, Bi: Residual Blocks, Dr : Dropout Rate
-Acc : Test Accuracy
+
 ## Metrics
 | Architecture | N | Bi | Dropout | Acc(%) |
 | :---:         |     :---:      |          :---: |    :---:      |     :---:     |
 | 1  |  4     |   [2,1,1,1]    | -   |  94.17%   |
 | 2  |  3     | [3,3,3]      | 0.2 (Conv layers + hidden layer)  |  94.17%    | 
+
+Table 2: Architecture configurations of Best Models. N : Residual Layer, Bi: Residual Blocks, Dr : Dropout Rate Acc : Test Accuracy
 
 # Respository details
 The BestArchitecture folder contains the model code used to setup and train the architecture along with the necessary plots. Each Model folder contains the following details
