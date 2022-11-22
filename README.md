@@ -8,7 +8,6 @@ After trying out a various methodologies and combinations of optimizers, paramet
 - Architecture 1: With Conv layers [2,1,1,1] block configuration for 64, 128, 256 & 512 channels respectively.
 - Architecture 2: With Concolutional Layers [2,1,1,1] block configurations for  64, 128, 256 & 512 channels respectively, but with a 10% dropout in classification layer.
 - Architecture 3: With 512 channel block removed with only [3,3,3] block configuration for 64, 128, 256 channels respectively, but with a 10% dropout in classification layer.
-- Architecture 3: With 512 channel block removed with only [3,3,3] block configuration for 64, 128, 256 channels respectively, plus dropout for Conv layers and hidden linear layer.
 
 # Respository details
 The BestArchitecture folder contains the model code used to setup and train the architecture along with the necessary plots. Each Model folder contains the following details
