@@ -32,7 +32,7 @@ class BasicBlock(nn.Module):
             )
 
     def forward(self, x):
-        out = self.dropout(F.relu(self.bn1(self.conv1(x)))
+        out = self.dropout(F.relu(self.bn1(self.conv1(x))) # Dropout for Conv layers
         out = self.bn2(self.conv2(out))
         out += self.shortcut(x)
         out = F.relu(out)
@@ -78,14 +78,18 @@ class ResNet(nn.Module):
         self.conv1 = nn.Conv2d(3, 64, kernel_size=3,
                                stride=1, padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(64)
+        # Strides have also been experimented to fit to the model configurations and also to improve on accuracy and time for computation
         self.layer1 = self._make_layer(block, 64, num_blocks[0], stride=1)
         self.layer2 = self._make_layer(block, 128, num_blocks[1], stride=2)
         self.layer3 = self._make_layer(block, 256, num_blocks[2], stride=4)
+        # To cater to the model design [3,3,3] The 512 channel block is removed which contributes to most of the parameters
         #self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=2)
         dp_val = 0.2
         print("The dropout value on linear layer: ",dp_val)
         self.dropout = nn.Dropout(p = dp_val)
         self.linear = nn.Linear(128*block.expansion, num_classes)
+        # Additional hidden layer of 128 neuron is added to have a robust and arbitrary decision boundary to improve on accuracy
+        # The downside of this is that it increases training time depending on the size of the hidden layer
         self.seq = nn.Sequential(
                 nn.Linear(256*block.expansion, 128),
                 nn.ReLU())
