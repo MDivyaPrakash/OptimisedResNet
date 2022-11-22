@@ -8,7 +8,7 @@ After trying out a various methodologies and combinations of optimizers, paramet
 - Architecture 1: With Conv layers [2,1,1,1] block configuration for 64, 128, 256 & 512 channels respectively.
 - Architecture 2: With 512 channel block removed with only [3,3,3] block configuration for 64, 128, 256 channels respectively, plus dropout for Convultional layers and extra hidden linear layer of 128 neurons.
 
-## Metrics
+### Metrics
 | Architecture | N | Bi | Dropout | Acc(%) |
 | :---:         |     :---:      |          :---: |    :---:      |     :---:     |
 | 1  |  4     |   [2,1,1,1]    | -   |  94.17%   |
