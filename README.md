@@ -9,6 +9,8 @@ After trying out a various methodologies and combinations of optimizers, paramet
 - Architecture 3: With 512 channel block removed with only [3,3,3] block configuration for 64, 128, 256 channels respectively, but with a 10% dropout in classification layer.
 - Architecture 3: With 512 channel block removed with only [3,3,3] block configuration for 64, 128, 256 channels respectively, plus dropout for Conv layers and hidden linear layer.
 
+The dataset which was used was the CIFAR-10 image classification datase
+
 # Respository details
 The BestArchitecture folder contains the model code used to setup and train the architecture along with the necessary plots. Each Model folder contains the following details
 - Python Notebook having the results and plots for each model configuration
