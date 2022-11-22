@@ -14,7 +14,7 @@ After trying out a various methodologies and combinations of optimizers, paramet
 | 1  |  4     |   [2,1,1,1]    | -   |  94.17%   |
 | 2  |  3     | [3,3,3]      | 0.2 (Conv layers + hidden layer)  |  94.17%    | 
 
-Table 2: Architecture configurations of Best Models. N : Residual Layer, Bi: Residual Blocks, Dr : Dropout Rate Acc : Test Accuracy
+Table 1: Architecture configurations of Best Models. N : Residual Layer, Bi: Residual Blocks, Dr : Dropout Rate Acc : Test Accuracy
 
 # Respository details
 The BestArchitecture folder contains the model code used to setup and train the architecture along with the necessary plots. Each Model folder contains the following details
