@@ -6,6 +6,8 @@ Reference:
 [1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
     Deep Residual Learning for Image Recognition. arXiv:1512.03385
 '''
+#This ResNet Model is just a basic implementation of ResNet18, with a dynamic variable for layer structure
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -84,8 +86,6 @@ class ResNet(nn.Module):
         self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=2)
         dp_val = 0
         print("The dropout value on linear layer: ",dp_val)
-        #self.dropout = nn.Dropout(p = dp_val)
-        #self.pool = nn.MaxPool2d(4,4)
         self.linear = nn.Linear(512*block.expansion, num_classes)
 
     def _make_layer(self, block, planes, num_blocks, stride):
@@ -103,9 +103,7 @@ class ResNet(nn.Module):
         out = self.layer3(out)
         out = self.layer4(out)
         out = F.avg_pool2d(out, 4)
-        #out = self.pool(out)
         out = out.view(out.size(0), -1)
-        #out = self.dropout(self.linear(out))
         out = self.linear(out)
         return out
 
