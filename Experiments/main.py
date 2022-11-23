@@ -122,7 +122,6 @@ if __name__ == '__main__':
     print(" Number of workers is " + str(args.numwork))
     print(" Number of epochs is " + str(args.epochs))
     print(" Learning rate is " + str(args.lr))
-    print(" Dropout rate is " + str(args.dropout))
 
     classes = ('plane', 'car', 'bird', 'cat', 'deer','dog', 'frog', 'horse', 'ship', 'truck')
 
