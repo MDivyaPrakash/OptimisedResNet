@@ -26,4 +26,4 @@ The BestArchitecture folder contains the model code used to setup and train the 
 - checkpoint folder stored the best model obtained during the traininf
 - plots contains the plot generated for the model specified
 
-![Alt text](./Experiments/ExperimentsImage1.jpeg?raw=true "Title")
+<img src="Experiments/ExperimentImage1.jpeg" alt="Alt text" title="Optional title">
