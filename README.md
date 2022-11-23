@@ -29,4 +29,5 @@ The BestArchitecture folder contains the model code used to setup and train the 
 A snapshot of experiments carried out. Detailed information can be found below:
 <img src="Experiments/ExperimentImage1.jpeg" alt="Alt text" title="Optional title">
 Please find the below link for the experimentations done during this project.
+
 https://docs.google.com/spreadsheets/d/1zcKqYuy7a7Tt2M-SUv6CsE0WjOp50pxkuD4_kTcdCd0/edit#gid=0
