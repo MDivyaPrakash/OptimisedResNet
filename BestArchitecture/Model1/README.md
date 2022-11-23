@@ -4,5 +4,5 @@
 ```
 ### For plotting the variables use the below command in Jupyter Notebook:
 ```
-%run main.py
+%run PlotConfusionMatrix.py
 ```
