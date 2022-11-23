@@ -12,7 +12,7 @@ After trying out a various methodologies and combinations of optimizers, paramet
 | Architecture | N | Bi | Dropout | Acc(%) |
 | :---:         |     :---:      |          :---: |    :---:      |     :---:     |
 | 1  |  4     |   [2,1,1,1]    | -   |  94.17%   |
-| 2  |  3     | [3,3,3]      | 0.2 (Conv layers + hidden layer)  |  94.17%    | 
+| 2  |  3     | [3,3,3]      | 0.2 (Conv layers + hidden layer)  |  94.33%    | 
 
 Table 1: Architecture configurations of Best Models. N : Residual Layer, Bi: Residual Blocks, Dr : Dropout Rate Acc : Test Accuracy
 
