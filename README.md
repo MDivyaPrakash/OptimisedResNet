@@ -16,6 +16,13 @@ After trying out a various methodologies and combinations of optimizers, paramet
 
 Table 1: Architecture configurations of Best Models. N : Residual Layer, Bi: Residual Blocks, Dr : Dropout Rate Acc : Test Accuracy
 
+### Experimentation
+A snapshot of experiments carried out. Detailed information can be found below:
+<img src="Experiments/ExperimentImage1.jpeg" alt="Alt text" title="Optional title">
+Please find the below link for the experimentations done during this project.
+
+https://docs.google.com/spreadsheets/d/1zcKqYuy7a7Tt2M-SUv6CsE0WjOp50pxkuD4_kTcdCd0/edit#gid=0
+
 # Respository details
 The BestArchitecture folder contains the model code used to setup and train the architecture along with the necessary plots. Each Model folder contains the following details
 - Python Notebook having the results and plots for each model configuration
@@ -26,8 +33,3 @@ The BestArchitecture folder contains the model code used to setup and train the 
 - checkpoint folder stored the best model obtained during the traininf
 - plots contains the plot generated for the model specified
 
-A snapshot of experiments carried out. Detailed information can be found below:
-<img src="Experiments/ExperimentImage1.jpeg" alt="Alt text" title="Optional title">
-Please find the below link for the experimentations done during this project.
-
-https://docs.google.com/spreadsheets/d/1zcKqYuy7a7Tt2M-SUv6CsE0WjOp50pxkuD4_kTcdCd0/edit#gid=0
