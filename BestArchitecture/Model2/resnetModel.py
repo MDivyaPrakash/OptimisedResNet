@@ -32,7 +32,7 @@ class BasicBlock(nn.Module):
             )
 
     def forward(self, x):
-        out = self.dropout(F.relu(self.bn1(self.conv1(x))) # Dropout for Conv layers
+        out = self.dropout(F.relu(self.bn1(self.conv1(x)))) # Dropout for Conv layers
         out = self.bn2(self.conv2(out))
         out += self.shortcut(x)
         out = F.relu(out)
