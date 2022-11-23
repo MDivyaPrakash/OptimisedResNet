@@ -26,5 +26,6 @@ The BestArchitecture folder contains the model code used to setup and train the 
 - checkpoint folder stored the best model obtained during the traininf
 - plots contains the plot generated for the model specified
 
-A snapshot of experiments carried out. Detailed information can be found in the excel sheet in this repository:
+A snapshot of experiments carried out. Detailed information can be found below:
 <img src="Experiments/ExperimentImage1.jpeg" alt="Alt text" title="Optional title">
+https://docs.google.com/spreadsheets/d/1zcKqYuy7a7Tt2M-SUv6CsE0WjOp50pxkuD4_kTcdCd0/edit#gid=0
