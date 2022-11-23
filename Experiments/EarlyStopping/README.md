@@ -1,1 +1,2 @@
 
+To change the architecture, import the model library in `main_model2.py` and use that model to train as descirbed on line 139 of `main_model2.py`. Once the model is trained we use it for testing as described in `test.ipynb`.
